@@ -1,0 +1,80 @@
+/* Paleta de cores inspirada no morango */
+:root {
+    --morango: #ED254E;
+    --morango-dark: #D7263D;
+    --verde-folha: #42B883;
+    --chocolate: #8B5E3C;
+    --creme: #FFF7F8;
+}
+
+body {
+    background: var(--creme);
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.bg-morango {
+    background: linear-gradient(90deg, var(--morango), var(--morango-dark));
+}
+
+.bg-morango-dark {
+    background: var(--morango-dark);
+}
+
+.logo {
+    max-width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(237,37,78,0.2);
+}
+
+/* Morango animado */
+.animate-morango {
+    animation: floatMorango 2s infinite alternate;
+}
+@keyframes floatMorango {
+    to { transform: translateY(-15px) scale(1.05);}
+}
+
+.features-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1em;
+}
+.features-list li::before {
+    content: '🍓 ';
+    color: var(--morango-dark);
+}
+
+/* Botões personalizados */
+.animate-btn {
+    box-shadow: 0 4px 12px rgba(237,37,78,0.2);
+    transition: transform .2s;
+}
+.animate-btn:hover {
+    transform: scale(1.07);
+}
+
+#whatsapp-button {
+    background: linear-gradient(90deg, var(--verde-folha), #25D366);
+    border: none;
+}
+#whatsapp-button i {
+    margin-right: 6px;
+}
+
+#instagram-button {
+    background: linear-gradient(90deg, #FF2B85, #ED254E);
+    border: none;
+}
+#instagram-button i {
+    margin-right: 6px;
+}
+
+@media (max-width: 768px) {
+    main .row {
+        flex-direction: column-reverse;
+    }
+    .morango-img {
+        max-width: 80%;
+        margin: 0 auto 20px auto;
+    }
+}
