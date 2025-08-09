@@ -4,51 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morango do Galego</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Ícones Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+
+    <!-- Estilo personalizado -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="bg-morango text-white text-center py-4">
-        <img src="assets/img/logo.png" alt="Morango do Galego" class="logo mb-2">
-        <h1>Morango do Galego</h1>
-        <p class="lead">O seu Morango do Amor em alta!</p>
-    </header>
 
-    <!-- Main section -->
-    <main class="container py-5">
+<!-- Navbar fixa -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">🍓 Morango do Galego</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sabores">Sabores</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header id="home" class="hero-section d-flex align-items-center text-center text-white">
+  <div class="container">
+    <h1 class="display-4 animate__animated animate__fadeInDown">O Morango do Amor como você nunca viu!</h1>
+    <p class="lead animate__animated animate__fadeInUp">Sabor, qualidade e carinho em cada mordida.</p>
+    <a href="#contato" class="btn btn-lg btn-success animate__animated animate__pulse animate__infinite">Peça Agora</a>
+  </div>
+</header>
+
+<!-- Sobre -->
+<section id="sobre" class="py-5">
+    <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6 text-center mb-4 mb-md-0">
-                <img src="assets/img/morango.png" alt="Morango do Amor" class="img-fluid morango-img animate-morango">
+            <div class="col-md-6 mb-4 animate__animated animate__fadeInLeft">
+                <img src="assets/img/plantacao-morangos.jpg" alt="Plantação de morangos" class="img-fluid rounded shadow">
             </div>
-            <div class="col-md-6 d-flex flex-column align-items-start">
-                <h2 class="mb-3">Descubra o sabor irresistível do Morango do Galego!</h2>
-                <ul class="features-list mb-4">
-                    <li>Morango selecionado e fresco</li>
-                    <li>Cobertura artesanal de chocolate premium</li>
-                    <li>Experiência única e apaixonante!</li>
-                </ul>
-                <div class="mb-4">
-                    <button class="btn btn-success btn-lg me-2 animate-btn" id="whatsapp-button">
-                        <i class="bi bi-whatsapp"></i> Pedir no WhatsApp
-                    </button>
-                    <button class="btn btn-danger btn-lg animate-btn" id="instagram-button">
-                        <i class="bi bi-instagram"></i> Instagram
-                    </button>
-                </div>
-                <small class="text-muted">Vendas personalizadas e delivery!</small>
+            <div class="col-md-6 animate__animated animate__fadeInRight">
+                <h2>Sobre Nós</h2>
+                <p>O <strong>Morango do Galego</strong> nasceu da paixão por sabores irresistíveis e produtos frescos. Produzimos morangos selecionados e criamos o famoso <em>Morango do Amor</em>, coberto com chocolate premium e preparado com cuidado artesanal.</p>
+                <p>Nosso compromisso é entregar uma experiência única, que desperte memórias afetivas e conquiste pelo sabor.</p>
             </div>
         </div>
-    </main>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-morango-dark text-white text-center py-3">
-        <span>&copy; 2025 Morango do Galego - Feito com ♥ para você</span>
-    </footer>
+<!-- Sabores -->
+<section id="sabores" class="py-5 section-bg">
+    <div class="container text-center">
+        <h2 class="mb-4">Nossos Sabores</h2>
+        <div class="row g-4">
+            <div class="col-md-4 animate__animated animate__zoomIn">
+                <img src="assets/img/morango-principal.jpg" alt="Morango Tradicional" class="img-fluid rounded shadow-sm">
+                <h4 class="mt-3">Morango Tradicional</h4>
+                <p>Morangos frescos, cobertos com chocolate ao leite cremoso.</p>
+            </div>
+            <div class="col-md-4 animate__animated animate__zoomIn" style="animation-delay:0.2s">
+                <img src="assets/img/morango-chocolate.jpg" alt="Morango Meio Amargo" class="img-fluid rounded shadow-sm">
+                <h4 class="mt-3">Meio Amargo</h4>
+                <p>O equilíbrio perfeito entre o doce da fruta e o sabor intenso do chocolate meio amargo.</p>
+            </div>
+            <div class="col-md-4 animate__animated animate__zoomIn" style="animation-delay:0.4s">
+                <img src="assets/img/equipe.jpg" alt="Morango Branco" class="img-fluid rounded shadow-sm">
+                <h4 class="mt-3">Chocolate Branco</h4>
+                <p>Leve, doce e irresistível, para quem ama um toque mais suave.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Scripts Bootstrap e JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+<!-- Galeria -->
+<section id="galeria" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Galeria de Delícias</h2>
+        <div class="row g-3">
+            <div class="col-6 col-md-3"><img src="assets/img/morango-principal.jpg" class="img-fluid rounded shadow"></div>
+            <div class="col-6 col-md-3"><img src="assets/img/morango-chocolate.jpg" class="img-fluid rounded shadow"></div>
+            <div class="col-6 col-md-3"><img src="assets/img/plantacao-morangos.jpg" class="img-fluid rounded shadow"></div>
+            <div class="col-6 col-md-3"><img src="assets/img/equipe.jpg" class="img-fluid rounded shadow"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Contato -->
+<section id="contato" class="py-5 section-bg">
+    <div class="container text-center">
+        <h2 class="mb-4">Fale Conosco</h2>
+        <p>Atendemos pedidos via WhatsApp e estamos no Instagram!</p>
+        <button class="btn btn-success btn-lg me-2 animate-btn" id="whatsapp-button">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+        </button>
+        <button class="btn btn-danger btn-lg animate-btn" id="instagram-button">
+            <i class="bi bi-instagram"></i> Instagram
+        </button>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-morango-dark text-white text-center py-3">
+    &copy; 2025 Morango do Galego - Feito com ♥ para você
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>new WOW().init();</script>
+
 </body>
 </html>
